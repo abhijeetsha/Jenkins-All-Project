@@ -4,11 +4,16 @@ Jenkins-Mega-Project
 1) Create one EC-2 instance on AWS take ssh and Login on command prompt.
 2) Create one IAM User and create access key and access id on aws.
 3) Install AWSCLI package on ec-2 instance and configure with aws.
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-sudo apt-get install unzip -y
-unzip awscliv2.zip
-sudo ./aws/install
-5) Install terraform tools package on EC-2 instance.
+ * curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ * sudo apt-get install unzip -y
+ * unzip awscliv2.zip
+ * sudo ./aws/install
+4) Install terraform tools package on EC-2 instance.
+   * sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+   * wget -O- https://apt.releases.hashicorp.com/gpg | \
+   * gpg --dearmor | \
+   * sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+
 6) With the help of terraform tools create EC-2 instance that name is "Master-:wqMachine"
 7) After That Go To Wanderlust-Mega-Project Direcctory.
 8) Now you have to only focus on "Master-Machine"
