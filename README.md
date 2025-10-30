@@ -29,6 +29,11 @@ sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
    * terraform plan
    * terraform apply
 7) After That Go To Wanderlust-Mega-Project Direcctory.
-7) Now you have to only focus on "Master-Machine"
-8) Now you have to all types of tools install in "Master-Machine"
-9) Do step-by-step and one-by-one package install on Servers.
+8) Now you have to only focus on "Master-Machine"
+9) Now you have to all types of tools install in "Master-Machine"
+10) Do step-by-step and one-by-one package install on Servers.
+
+## How to take file from EC-2 server to our windows personal machines.
+### follow this commad:-
+  * scp -i "wardha.pem" ec2-user@98.93.20.149:/home/ec2-user/Wanderlust-Mega-Project/terraform/terra-key .
+
