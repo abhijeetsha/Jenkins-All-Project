@@ -36,4 +36,5 @@ sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
 ## How to take file from EC-2 server to our windows personal machines.
 ### follow this commad:-
   * scp -i "wardha.pem" ec2-user@98.93.20.149:/home/ec2-user/Wanderlust-Mega-Project/terraform/terra-key .
+  *  . means current directory or you can add your path of computer
 
