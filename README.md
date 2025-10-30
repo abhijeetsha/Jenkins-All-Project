@@ -21,11 +21,14 @@ sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
   * echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
   * sudo apt update
   * sudo apt-get install terraform
-5) With the help of terraform tools create EC-2 instance that name is "Master-:wqMachine"
+5) Create ssh-key
+  * ssh-keygen
+  * Name>>terra-key
+6) With the help of terraform tools create EC-2 instance that name is "Master-:wqMachine"
    * terraform init
    * terraform plan
    * terraform apply
-6) After That Go To Wanderlust-Mega-Project Direcctory.
+7) After That Go To Wanderlust-Mega-Project Direcctory.
 7) Now you have to only focus on "Master-Machine"
 8) Now you have to all types of tools install in "Master-Machine"
 9) Do step-by-step and one-by-one package install on Servers.
