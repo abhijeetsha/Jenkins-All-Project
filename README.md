@@ -8,6 +8,8 @@ Jenkins-Mega-Project
  * sudo apt-get install unzip -y
  * unzip awscliv2.zip
  * sudo ./aws/install
+ * aws configure
+ * add access key and access id
 4) Install terraform tools package on EC-2 instance.
    * sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
    * wget -O- https://apt.releases.hashicorp.com/gpg | \
